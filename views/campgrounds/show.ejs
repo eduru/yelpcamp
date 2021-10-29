@@ -7,8 +7,13 @@
     <title>Show</title>
 </head>
 <body>
-    <h1>Campground Show!</h1>
-    <p><%= campground.title %> </p>
-    <a href="/campgrounds">Back</a>
+    <h1><%= campground.title %></h1>
+    <h2><%= campground.location %> </h2>
+    <p>
+        <a href="/campgrounds/<%= campground._id %>/edit ">Edit</a>
+    </p>
+    <footer>
+        <a href="/campgrounds">Back</a>
+    </footer>
 </body>
 </html>
